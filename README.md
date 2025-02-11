@@ -1,4 +1,4 @@
-# -TRUMP-Trading-Volume
+# $TRUMP Coin Trading Volume on Uniswap 
 
 ## Uniswap Token Volume Analysis
 
