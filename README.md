@@ -4,52 +4,44 @@
 
 ### Overview
 
-#### This project utilizes Dune Analytics to query Uniswap trading data for a specific token. The SQL query aggregates the hourly trading volume (in USD) of the token purchased on Uniswap from January 17, 2025, to the present.
+#### - This project utilizes Dune Analytics to query Uniswap trading data for a specific token. The SQL query aggregates the hourly trading volume (in USD) of the token purchased on Uniswap from January 17, 2025, to the present.
 
 ### Query Details
 
-#### The SQL query fetches and processes Uniswap trade data with the following logic:
+#### - The SQL query fetches and processes Uniswap trade data with the following logic:
 
-Extracts trading events where the token bought matches a specific address.
+#### - Extracts trading events where the token bought matches a specific address.
 
-Filters trades occurring on or after January 17, 2025.
+#### - Filters trades occurring on or after January 17, 2025.
 
-Groups transactions by hourly timestamps using DATE_TRUNC('hour', block_time).
+#### - Groups transactions by hourly timestamps using DATE_TRUNC('hour', block_time).
 
-Sums the total transaction volume in USD for each hour.
+#### - Sums the total transaction volume in USD for each hour.
 
-Orders the results chronologically.
+#### - Orders the results chronologically.
 
-Prerequisites
+### How to Use
 
-Dune Analytics Account: Required to run the query.
+#### - Log in to Dune Analytics.
 
-Understanding of SQL: Familiarity with PostgreSQL functions like DATE_TRUNC, SUM, and filtering conditions.
+#### - Copy and paste the SQL query into the query editor.
 
-Blockchain Knowledge: Understanding how Uniswap trades and token addresses work.
+#### - Execute the query to visualize the hourly volume trends.
 
-How to Use
+#### - Modify the token address or date range as needed.
 
-Log in to Dune Analytics.
+### Use Cases
 
-Copy and paste the SQL query into the query editor.
+#### - Monitoring Token Activity: Track hourly trading volume for a specific token.
 
-Execute the query to visualize the hourly volume trends.
+#### - Market Analysis: Identify trends in token purchases on Uniswap.
 
-Modify the token address or date range as needed.
+#### - Investment Insights: Gauge liquidity and trading patterns over time.
 
-Use Cases
+### Contributions
 
-Monitoring Token Activity: Track hourly trading volume for a specific token.
+#### - Feel free to fork this repository, modify the query, and submit pull requests to enhance functionality or support additional tokens!
 
-Market Analysis: Identify trends in token purchases on Uniswap.
+### License
 
-Investment Insights: Gauge liquidity and trading patterns over time.
-
-Contributions
-
-Feel free to fork this repository, modify the query, and submit pull requests to enhance functionality or support additional tokens!
-
-License
-
-This project is open-source and available under the MIT License.
+#### - This project is open-source and available under the MIT License.
